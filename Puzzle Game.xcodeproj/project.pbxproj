@@ -15,6 +15,9 @@
 		AAAE7A321B6473A00023CD6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAE7A311B6473A00023CD6A /* Images.xcassets */; };
 		AAAE7A351B6473A00023CD6A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAAE7A331B6473A00023CD6A /* LaunchScreen.xib */; };
 		AAAE7A411B6473A00023CD6A /* Puzzle_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE7A401B6473A00023CD6A /* Puzzle_GameTests.swift */; };
+		AABC38551B71A31B002AAC72 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC38541B71A31B002AAC72 /* Block.swift */; };
+		AABC38571B71A618002AAC72 /* Boundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC38561B71A618002AAC72 /* Boundary.swift */; };
+		AABC38591B71AAB8002AAC72 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC38581B71AAB8002AAC72 /* Background.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		AAAE7A3A1B6473A00023CD6A /* Puzzle GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Puzzle GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAE7A3F1B6473A00023CD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAAE7A401B6473A00023CD6A /* Puzzle_GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle_GameTests.swift; sourceTree = "<group>"; };
+		AABC38541B71A31B002AAC72 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		AABC38561B71A618002AAC72 /* Boundary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boundary.swift; sourceTree = "<group>"; };
+		AABC38581B71AAB8002AAC72 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +87,13 @@
 		AAAE7A231B6473A00023CD6A /* Puzzle Game */ = {
 			isa = PBXGroup;
 			children = (
-				AAAE7A261B6473A00023CD6A /* AppDelegate.swift */,
-				AAAE7A281B6473A00023CD6A /* GameScene.sks */,
 				AAAE7A2A1B6473A00023CD6A /* GameScene.swift */,
+				AABC38581B71AAB8002AAC72 /* Background.swift */,
+				AABC38561B71A618002AAC72 /* Boundary.swift */,
+				AABC38541B71A31B002AAC72 /* Block.swift */,
 				AAAE7A2C1B6473A00023CD6A /* GameViewController.swift */,
-				AAAE7A2E1B6473A00023CD6A /* Main.storyboard */,
+				AAAE7A281B6473A00023CD6A /* GameScene.sks */,
 				AAAE7A311B6473A00023CD6A /* Images.xcassets */,
-				AAAE7A331B6473A00023CD6A /* LaunchScreen.xib */,
 				AAAE7A241B6473A00023CD6A /* Supporting Files */,
 			);
 			path = "Puzzle Game";
@@ -96,6 +102,9 @@
 		AAAE7A241B6473A00023CD6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AAAE7A2E1B6473A00023CD6A /* Main.storyboard */,
+				AAAE7A261B6473A00023CD6A /* AppDelegate.swift */,
+				AAAE7A331B6473A00023CD6A /* LaunchScreen.xib */,
 				AAAE7A251B6473A00023CD6A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -220,8 +229,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAAE7A2B1B6473A00023CD6A /* GameScene.swift in Sources */,
+				AABC38551B71A31B002AAC72 /* Block.swift in Sources */,
 				AAAE7A2D1B6473A00023CD6A /* GameViewController.swift in Sources */,
 				AAAE7A271B6473A00023CD6A /* AppDelegate.swift in Sources */,
+				AABC38571B71A618002AAC72 /* Boundary.swift in Sources */,
+				AABC38591B71AAB8002AAC72 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +429,7 @@
 				AAAE7A461B6473A00023CD6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAAE7A471B6473A00023CD6A /* Build configuration list for PBXNativeTarget "Puzzle GameTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +438,7 @@
 				AAAE7A491B6473A00023CD6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
